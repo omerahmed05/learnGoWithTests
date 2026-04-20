@@ -4,7 +4,8 @@ This repository contains my notes and code snippets while following the [Learn G
 
 ## About
 
-I'm working through this comprehensive guide to learn Go by writing tests first, following test-driven development (TDD) principles.
+I'm working through this guide to learn Go and test-driven development principles. My motivaiton for learning Go is to delve into the world of Distributed Systems where Go 
+is very popular. I also plan to learn Rust in the future.
 
 ## Contents
 
