@@ -2,7 +2,8 @@ c
 Everything in Go is organized into packages.
 - A **package** is the real unit of Go code organization.
 	- Files are just organizational units inside a package, meaning a package can be defined by multiple files (for readability) or just 1.
-- `package main` is a special type of package that will make the current Go file act as a executable. Thus, we must define a `main` function.
+- `package main` indicates that the package builds into an executable program.
+	- If a `main` function (`func main()`) is defined in this package, it serves as the program’s entry point.
 
 Go is a statically typed language, meaning every variable has a fixed type known at compile time. It supports type inference, so you often don’t need to explicitly write the type, but the type is still determined at compile time.
 - Type inference is done at compile time.
@@ -58,11 +59,10 @@ You can ==group related tests== together using a language feature called **subte
 2. The test is too weak (or incorrect)
 
 Test Driven Development Cycle:
-3. Write a test
-4. Run tests and resolve any compiler errors
-5. Run the test again to see that it fails and the error message is meaningful
-6. Write enough code for the test to pass
-7. Refactor (DRY principle)
+1. Write a test
+2. Run tests and resolve any compiler errors (don't write code to make the test pass yet)
+3. Write enough code for the test to pass
+4. Refactor (Get rid of redundancy, DRY - Don't Repeat Yourself)
 
 We rely on tests to check our code rather than manually doing it ourselves. Additionally, we set up our tools (`go test`) so that running tests is simple.
 
